@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5dc;
+      color: #333;
+      padding: 2rem 6%;
+      background-image: 
+        linear-gradient(0deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 8px 8px;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 2rem;
+      min-height: calc(100vh - 160px);
+      gap: 3rem;
+      flex-wrap: nowrap;
+      border: 1px solid #c19a6b;
+      box-shadow: 0 0 8px #c19a6b, 0 0 16px #c19a6b;
+      border-radius: 30px;
+      background-color: transparent;
+    }
+
+    .image-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 0.5rem;
+    }
+
+    .image-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #c19a6b;
+      box-shadow: 0 0 8px #c19a6b, 0 0 16px #c19a6b;
+      margin-top: 0.5rem;
+    }
+
+    .text-section {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      gap: 1.5rem;
+    }
+
+    .text-section p {
+      margin: 0;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+
+    .skills-section {
+      margin-top: 3rem;
+    }
+
+    .skills-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+      border-bottom: 2px solid #c19a6b;
+      padding-bottom: 0.5rem; 
+    }
+
+    .card-box {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .small-card {
+      display: flex;
+      align-items: center;
+      background: #f5f5dc;
+      padding: 0.8rem 1rem;
+      border: 1px solid #c19a6b;
+      border-radius: 12px;
+      box-shadow: 0 0 6px #c19a6b;
+      width: fit-content;
+      color: #333;
+      gap: 0.8rem;
+    }
+
+    .small-card img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .small-card span {
+      font-size: 1rem;
+    }
+
+    .image-section h1 {
+      font-size: 2.2rem;
+      color: #333;
+      border-bottom: 2px solid #c19a6b;
+      padding-bottom: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .image-section img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .text-section {
+        max-width: 100%;
+        margin-top: 2rem;
+        gap: 1rem;
+      }
+
+      .card-box {
+        justify-content: center;
+      }
+
+      .skills-section h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="image-section">
+        <h1>About Me</h1>
+        <img src="Pfp2.jpg" alt="Profile Photo">
+      </div>
+
+      <div class="text-section">
+        <p>I’m an ICT student from the Philippines with a focus on front-end development. In my free time, I enjoy creating simple, clean websites using HTML and CSS.</p>
+        <p>I believe in keeping things straightforward and meaningful, both in code and in life. Most of my ideas come to life during the quiet hours of the night, where I find focus and clarity.</p>
+        <p>This personal site is a space for me to showcase my work, ideas, and continuous learning in front-end web development.</p>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h2>Skills</h2>
+      <div class="card-box">
+        <div class="small-card">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML Logo">
+          <span>HTML</span>
+        </div>
+        <div class="small-card">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS Logo">
+          <span>CSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

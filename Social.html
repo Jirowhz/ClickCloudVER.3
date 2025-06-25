@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Social</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5dc;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: 
+        linear-gradient(0deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 8px 8px;
+    }
+
+    .outer-box {
+      border: 1px solid #c19a6b;
+      box-shadow: 0 0 8px #c19a6b, 0 0 16px #c19a6b;
+      border-radius: 30px;
+      padding: 1.5rem;
+      background-color: #fff8dc;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 17px;
+    }
+
+    .outer-box h1 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0.8rem;
+      box-sizing: border-box;
+    }
+
+    .social-box {
+      border: 1px solid #c19a6b;
+      border-radius: 20px;
+      padding: 0.8rem 1rem;
+      background-color: #fdf6e3;
+      text-align: center;
+      width: 160px;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 4px #c19a6b;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .social-box div:first-child {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    .social-desc {
+      font-size: 0.85rem;
+      color: #5a4222;
+    }
+
+    .social-box:hover {
+      background-color: #f2e2c4;
+      box-shadow: 0 0 6px #c19a6b;
+      color: #5a4222;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-box {
+        width: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer-box">
+    <h1>My Social's</h1>
+    <div class="container">
+      <a class="social-box" href="https://t.me/jir0whzz" target="_blank">
+        <div>Telegram</div>
+        <div class="social-desc">Fastest way to contact me.</div>
+      </a>
+      <a class="social-box" href="https://www.instagram.com/Jir0whz_z" target="_blank">
+        <div>Instagram</div>
+        <div class="social-desc">Another social I rarely use.</div>
+      </a>
+      <a class="social-box" href="https://github.com/jirowhz" target="_blank">
+        <div>GitHub</div>
+        <div class="social-desc">My GitHub profile.</div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

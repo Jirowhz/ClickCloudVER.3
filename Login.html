@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #f5f5dc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: 
+    linear-gradient(0deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 8px 8px;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: #f2d0a0;
+  text-shadow:
+    0 9px 0 #b68d6d,
+    5px 4px 0 #333;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  text-align: center;
+}
+
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: floatUpDown 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.input-field {
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff6ed;
+  color: #333;
+  border: 2px solid #000;
+  border-radius: 30px;
+  box-shadow: 2px 2px 0 #00000030;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.input-field:hover {
+  box-shadow: 7px 7px 0 #00000050;
+  transform: translateY(-2px);
+}
+
+.purpose {
+  font-size: 0.75rem;
+  color: #5a4222;
+  margin: 12px 0 20px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.login-button {
+  font-size: 1.3rem;
+  padding: 10px 40px;
+  background-color: #f6d8ad;
+  color: #333;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 2px 2px 0 #00000030;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.login-button:hover {
+  box-shadow: 7px 7px 0 #00000050;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  font-family: monospace;
+  padding: 4px 12px;
+  color: #555;
+  border: 2px solid #000;
+  background-color: #f6d8ad;
+  border-radius: 30px;
+  margin: 50px auto 10px;
+  animation: floatUpDown 3s ease-in-out infinite;
+  will-change: transform;
+  box-shadow: 6px 10px 0 #00000030;
+}
+
+
+
+    </style>
+</head>
+<body>
+  
+
+
+  <div class="container">
+    <h1 class="title">Welcome to My Website</h1>
+    <p class="welcome">Glad you're here!</p>
+     
+
+    <input type="text" class="input-field" placeholder="Enter Username"/>
+    <input type="text" class="input-field" placeholder="Enter Password"/>
+
+    <p class="purpose">This site is a personal project to showcase my work and experiments. No login is required — feel free to proceed!</p>
+
+    <a href="Frame.html" class="login-button">Log In</a>
+  </div>
+
+  <footer>
+    <p>Coded by <a href="https://t.me/jir0whzz" target="_blank">Jirowhz</a> — June 17, 2025</p>
+    <p style="font-size: 0.9rem; color: #5a4222;">ClickCloudVER.3</p>
+  </footer>
+</body>
+</html>

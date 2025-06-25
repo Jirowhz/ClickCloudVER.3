@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5dc;
+      color: #333;
+      padding: 2rem 6%;
+      background-image: 
+        linear-gradient(0deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 8px 8px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      min-height: calc(100vh - 160px);
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+
+    .text-section {
+      max-width: 500px;
+    }
+
+    .text-section h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+    }
+
+    .text-section h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .highlight {
+      color: #c19a6b;
+    }
+
+    .text-section p {
+      font-size: 1rem;
+      letter-spacing: 1.2px;
+      line-height: 1.8;
+    }
+
+    .image-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #c19a6b;
+      box-shadow: 0 0 8px #c19a6b, 0 0 16px #c19a6b;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .text-section {
+        max-width: 100%;
+      }
+
+      .image-section img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Hello World, I’m</h1>
+      <h2><span class="highlight">Jirowhz</span></h2>
+      <p>An ICT Student. A front-end hobbyist<br>
+      <span class="highlight">Welcome to my Personal Website.</span></p>
+    </div>
+    <div class="image-section">
+      <img src="Pfp2.jpg" alt="Profile Photo">
+    </div>
+  </div>
+
+</body>
+</html>

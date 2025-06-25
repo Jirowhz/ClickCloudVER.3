@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards with Image Zoom</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5dc;
+      color: #333;
+      padding: 20px;
+      background-image: 
+        linear-gradient(0deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 80, 50, 0.2) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 8px 8px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 70px;
+    }
+
+    h2.section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+      border-bottom: 2px solid #c19a6b;
+      padding-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #fff8dc;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #c19a6b;
+      box-shadow: 0 0 6px #c19a6b;
+      width: 100%;
+      max-width: 300px;
+      color: #333;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #c19a6b;
+      cursor: pointer;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #c19a6b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #a47e55;
+    }
+
+    /* Lightbox overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      text-align: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border: 4px solid #fff;
+      border-radius: 8px;
+      margin-top: 50px;
+      box-shadow: 0 0 15px #000;
+    }
+
+    .lightbox:target {
+      display: block;
+    }
+
+    @media(max-width: 400px) {
+      .card {
+        padding: 12px;
+      }
+
+      .card p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <a href="#img1">
+          <img src="1st.png" alt="Personal Website v1">
+        </a>
+        <p>ClickCloudVER.1</p>
+        <p>
+          My first personal website made when I was learning basic HTML in school. I discovered &lt;iframe&gt; and it inspired me to start creating personal sites. It wasn’t perfect, but it got me interested in front-end design.
+        </p>
+        <a href="https://jirowhz.github.io/ClickCloudVER.1/Index.html" target="_blank" class="button">View Website</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <a href="#img2">
+          <img src="2nd.png" alt="Sample Project">
+        </a>
+        <p>ClickCloudVER.2</p>
+        <p>My second personal website. I added hover effects, better layout, and a grid design after realizing my first site was too plain. It’s a big improvement, but I still need improvements.</p>
+        <a href="https://jirowhz.github.io/ClickCloudVER.2/Login.html" target="_blank" class="button">View Website</a>
+      </div>
+
+      
+      <!-- Card 3 -->
+      <div class="card">
+        <a href="#img3">
+          <img src="https://via.placeholder.com/300x180" alt="Picture">
+        </a>
+        <p>New project coming soon — stay tuned!</p>
+        <a href="#" class="button">View Website</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <a href="#img4">
+          <img src="https://via.placeholder.com/300x180" alt="Picture">
+        </a>
+        <p>New project coming soon — stay tuned!</p>
+        <a href="#" class="button">View Website</a>
+      </div>
+
+
+      
+    </div>
+  </div>
+
+  <!-- Lightbox Popups -->
+  <div id="img1" class="lightbox">
+    <a href="#"><img src="1st.png" alt="Personal Website v1"></a>
+  </div>
+
+  <div id="img2" class="lightbox">
+    <a href="#"><img src="2nd.png" alt="Sample Project"></a>
+  </div>
+
+  <div id="img3" class="lightbox">
+    <a href="#"><img src="https://via.placeholder.com/800x600" alt="Sample Project"></a>
+  </div>
+
+  <div id="img4" class="lightbox">
+    <a href="#"><img src="https://via.placeholder.com/800x600" alt="Sample Project"></a>
+  </div>
+
+  <div id="img5" class="lightbox">
+    <a href="#"><img src="https://via.placeholder.com/800x600" alt="Sample Project"></a>
+  </div>
+
+</body>
+</html>
